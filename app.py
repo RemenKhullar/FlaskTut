@@ -63,9 +63,9 @@ class Video(Resource):
 		if args['name']:
 			result.name=args['name'] 
 		if args['likes']:
-			result.name=args['likes'] 
+			result.likes=args['likes'] 
 		if args['views']:
-			result.name=args['views'] 
+			result.views=args['views'] 
 
 		db.session.commit()
 		return result, 200
